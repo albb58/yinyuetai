@@ -1,0 +1,70 @@
+<script id="near_Box" type="text/html">
+    {{each list}}
+        <li>
+            <a href="{{$value.url1}}">
+                <img id="{{$value.id}}" src="{{$value.image1}}" alt="{{$value.title1}}">
+                <p class="actorName">{{@ $value.artistName}}</p>
+                <p class="goodsName">{{@ $value.title1}}</p>
+                <div class="goodsList_info">
+                    <p class="goods_price">{{@ '¥'+$value.realPrice}}</p>
+                    <p class="like">
+                        <span class="heart"></span>
+                        <i>{{@ $value.favoNum}}</i>
+                    </p>
+                </div>
+            </a>
+        </li>
+    {{/each}}
+</script>
+<script id="special_Box" type="text/html">
+    {{each list}}
+        <li>
+            <a href="{{$value.url1}}">
+                <p class="actorName">{{@ $value.artistName}}</p>
+                <p class="goodsName">{{@ $value.title1}}</p>
+                <div class="goodsList_info">
+                    <p class="goods_price">{{@ '¥'+$value.realPrice}}</p>
+                    <p class="like">
+                        <span class="heart"></span>
+                        <i>{{@ $value.favoNum}}</i>
+                    </p>
+                </div>
+                <img id="{{$value.id}}" src="{{$value.image1}}" alt="{{$value.title1}}">
+            </a>
+        </li>
+    {{/each}}
+</script>
+<script id="hot_Box" type="text/html">
+    {{each list}}
+        <li>
+            <a href="{{$value.url1}}">
+                <img id="{{$value.id}}" src="{{$value.image1}}" alt="{{$value.title1}}">
+                <p class="goodsName">{{@ $value.title1}}</p>
+                <div class="goodsList_info">
+                    <p class="goods_price">{{@ '¥'+$value.realPrice}}</p>
+                    <p class="like">
+                        <span class="heart"></span>
+                        <i>{{@ $value.favoNum}}</i>
+                    </p>
+                </div>
+            </a>
+        </li>
+    {{/each}}
+</script>
+<script id="china_Box" type="text/html">
+    {{each list}}
+        <li>
+            <a href="{{$value.url1}}">
+                <img id="{{$value.id}}" src="{{$value.image1}}" alt="{{$value.title1}}">
+                <p class="goodsName">{{@ $value.title1}}</p>
+                <div class="goodsList_info">
+                    <p class="goods_price">{{@ '¥'+$value.realPrice}}</p>
+                    <p class="like">
+                        <span class="heart"></span>
+                        <i>{{@ $value.favoNum}}</i>
+                    </p>
+                </div>
+            </a>
+        </li>
+    {{/each}}
+</script>

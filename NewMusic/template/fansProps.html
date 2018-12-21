@@ -1,0 +1,12 @@
+<script id="fans_prop" type="text/html">
+	<div class="swiper-wrapper fans_track">
+		<% for(var i=0; i<list.length; i++) { %>
+			<div class="swiper-slide fans_box">
+                <a  href="<%=list[i].url1%>">
+					<img id='<%=list[i].id%>' src="<%= list[i].image1%>" alt="<%=list[i].title1%>" >
+					<p>{{@ list[i].title1}}</p>
+                </a>
+			</div>
+		<% } %>
+	</div>
+</script>

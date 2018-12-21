@@ -1,0 +1,17 @@
+<script id="swiperSlider" type="text/html">
+	<div class="swiper-wrapper">
+		<% for(var i=0; i<list.length; i++) { %>
+			<div class="swiper-slide">
+				<a  href="<%=list[i].url1%>">
+					<img id=<%=list[i].id%> src="<%= "http:" + list[i].image1%>" alt="<%=list[i].title1%>" >
+				</a>
+			</div>
+		<% } %>
+	</div>
+	<!-- 如果需要分页器 -->
+	<div class="swiper-pagination" id="pagination1"></div>
+	
+	<!-- 如果需要导航按钮 -->
+	<div class="swiper-button-prev swiper_left"></div>
+	<div class="swiper-button-next swiper_right"></div>
+</script>

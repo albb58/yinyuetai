@@ -1,0 +1,21 @@
+<script id="actorList" type="text/html">
+    <% for(var i=0; i<list.length; i++) { %>
+		<div class="actor_list">
+			<h4 >
+				<a  href="">
+					<%- list[i].typeName+'>'%>
+				</a>
+			</h4>
+			<% if(i==3){%>
+				<ul>
+					<li>
+						<a href="">
+							<%- list[i].listTag[0].title%>
+						</a>
+					</li>
+				</ul>
+            <% } %>
+            <a class="more" href=""></a>
+		</div>
+	<% } %>
+</script>

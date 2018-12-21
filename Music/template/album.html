@@ -1,0 +1,65 @@
+<script id="albumFirst" type="text/html">
+    {{each list}}
+        
+            <a  href="{{$value.url1}}">
+                <img id="{{$value.id}}" src="{{$value.image1}}" alt="{{$value.title1}}">
+            </a>
+
+    {{/each}} 
+</script>
+<script id="album_box" type="text/html">
+    {{each list}}
+        <li>
+            <a href="{{$value.url1}}">
+                <img id="{{$value.id}}" src="{{$value.image1}}" alt="{{$value.title1}}">
+                <p class="goodsName">{{@ $value.title1}}</p>
+                <p class="like">
+                    <span class="heart"></span>
+                    <i>{{@ $value.favoNum}}</i>
+                </p>
+            </a>
+        </li>
+    {{/each}}
+</script>
+<script id="album_mainland" type="text/html">
+    {{each list}}
+        {{if $index == 0}}
+            <li class="movein">
+                <span class="rankNum">{{@ $value.rank}}</span>
+                <a href="">
+                    <img id="{{$value.id}}" src="{{$value.headImg}}" alt="{{$value.title}}">
+                    <p class="goodsName">{{@ $value.title}}</p>
+                </a>
+            </li>
+        {{else if $index > 0}}
+            <li>
+                <span class="rankNum">{{@ $value.rank}}</span>
+                <a href="">
+                    <img id="{{$value.id}}" src="{{$value.headImg}}" alt="{{$value.title}}">
+                    <p class="goodsName">{{@ $value.title}}</p>
+                </a>
+            </li>
+        {{/if}}
+    {{/each}}
+</script>
+<script id="album_import" type="text/html">
+    {{each list}}
+        {{if $index == 0}}
+            <li class="movein">
+                <span class="rankNum">{{@ $value.rank}}</span>
+                <a href="">
+                    <img id="{{$value.id}}" src="{{$value.headImg}}" alt="{{$value.title}}">
+                    <p class="goodsName">{{@ $value.title}}</p>
+                </a>
+            </li>
+        {{else if $index > 0}}
+            <li>
+                <span class="rankNum">{{@ $value.rank}}</span>
+                <a href="">
+                    <img id="{{$value.id}}" src="{{$value.headImg}}" alt="{{$value.title}}">
+                    <p class="goodsName">{{@ $value.title}}</p>
+                </a>
+            </li>
+        {{/if}}
+    {{/each}}
+</script>

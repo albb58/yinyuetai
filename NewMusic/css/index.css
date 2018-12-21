@@ -1,0 +1,1859 @@
+@charset "UTF-8";
+body, p, h1, h2, h3, h4, h5, h6, ul, dl, dd, td, input, fieldset, textarea, option {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+img {
+  border: none;
+  vertical-align: top;
+}
+
+a, input {
+  outline: none;
+  border: none;
+}
+
+h1, h2, h3, h4, h5, h6, b, strong {
+  font-weight: 100;
+  font-size: 100%;
+}
+
+i, em {
+  font-style: normal;
+}
+
+body {
+  font: 12px "微软雅黑";
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+  height: 0;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.w-max {
+  width: 100%;
+}
+
+.h-max {
+  height: 100%;
+}
+
+.wh-max {
+  width: 100%;
+  height: 100%;
+}
+
+/*定义变量*/
+div#newHead .headcontain .newTitle .sina .codeSina p.scan, div#newHead .headcontain .newTitle .weixin .codeWeixin p.scan {
+  color: #ff2c72;
+  margin-top: -12px;
+}
+
+div#newHead .headcontain .newTitle .sina .codeSina p.scanMore, div#newHead .headcontain .newTitle .weixin .codeWeixin p.scanMore {
+  font-size: 12px;
+  color: #1f2021;
+  margin-top: -11px;
+}
+
+div#newBox .goodsList_new li a .newGoods_info .like, div#we_like .like_box .like_goodsList li .like_a .likeGoods_info .like, div#albumBox .albumBox .albumList li a .like, div#gray_bigBox .goodsBox .nearList li a .goodsList_info .like, div#gray_bigBox .goodsBox .specialList li a .goodsList_info .like, div#gray_bigBox .goodsBox .hotList li a .goodsList_info .like, div#gray_bigBox .goodsBox .chinaList li a .goodsList_info .like {
+  color: #b3b3b3;
+}
+
+div#newBox .goodsList_new li a .newGoods_info .like .heart, div#we_like .like_box .like_goodsList li .like_a .likeGoods_info .like .heart, div#albumBox .albumBox .albumList li a .like .heart, div#gray_bigBox .goodsBox .nearList li a .goodsList_info .like .heart, div#gray_bigBox .goodsBox .specialList li a .goodsList_info .like .heart, div#gray_bigBox .goodsBox .hotList li a .goodsList_info .like .heart, div#gray_bigBox .goodsBox .chinaList li a .goodsList_info .like .heart {
+  display: inline-block;
+  background: url("http://s.yytcdn.com/v2/images/ico.png") 0 -72px no-repeat;
+  width: 13px;
+  height: 10px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+div#newBox .goodsList_new li a .newGoods_info .like .heart:hover, div#we_like .like_box .like_goodsList li .like_a .likeGoods_info .like .heart:hover, div#albumBox .albumBox .albumList li a .like .heart:hover, div#gray_bigBox .goodsBox .nearList li a .goodsList_info .like .heart:hover, div#gray_bigBox .goodsBox .specialList li a .goodsList_info .like .heart:hover, div#gray_bigBox .goodsBox .hotList li a .goodsList_info .like .heart:hover, div#gray_bigBox .goodsBox .chinaList li a .goodsList_info .like .heart:hover {
+  background: url("http://s.yytcdn.com/v2/images/ico.png") -13px -72px no-repeat;
+}
+
+/*顶部*/
+div#newHead {
+  height: 30px;
+  width: 100%;
+  background-color: #1c1d1e;
+}
+
+div#newHead .headcontain {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+div#newHead .headcontain a .yinyueLoGo {
+  background: url("http://s.yytcdn.com/v2/images/yinLogo.png");
+  height: 30px;
+  width: 55px;
+  margin-left: 15px;
+}
+
+div#newHead .headcontain .newTitle {
+  position: relative;
+  font-size: 12px;
+  color: #9B9B9C;
+  line-height: 30px;
+  margin-left: 67%;
+}
+
+div#newHead .headcontain .newTitle .sina, div#newHead .headcontain .newTitle .weixin {
+  top: 0;
+  width: 135px;
+  text-align: center;
+  z-index: 100;
+  cursor: pointer;
+  padding: 0 10px;
+}
+
+div#newHead .headcontain .newTitle .sina {
+  position: absolute;
+}
+
+div#newHead .headcontain .newTitle .sina:hover {
+  background-color: #fff;
+}
+
+div#newHead .headcontain .newTitle .sina:hover div.codeSina {
+  display: block;
+}
+
+div#newHead .headcontain .newTitle .sina .codeSina {
+  display: none;
+}
+
+div#newHead .headcontain .newTitle .sina .codeSina img {
+  width: 100%;
+}
+
+div#newHead .headcontain .newTitle .Separate1, div#newHead .headcontain .newTitle .Separate2, div#newHead .headcontain .newTitle .zhengpin {
+  margin-left: 40px;
+  cursor: pointer;
+}
+
+div#newHead .headcontain .newTitle .Separate1 {
+  position: absolute;
+  color: #2f3031;
+  font-weight: bold;
+  left: 100px;
+}
+
+div#newHead .headcontain .newTitle .weixin {
+  position: absolute;
+  left: 36%;
+}
+
+div#newHead .headcontain .newTitle .weixin:hover {
+  background-color: #fff;
+}
+
+div#newHead .headcontain .newTitle .weixin:hover div.codeWeixin {
+  display: block;
+}
+
+div#newHead .headcontain .newTitle .weixin .codeWeixin {
+  display: none;
+}
+
+div#newHead .headcontain .newTitle .weixin .codeWeixin img {
+  width: 100%;
+}
+
+div#newHead .headcontain .newTitle .Separate2 {
+  position: absolute;
+  color: #2f3031;
+  font-weight: bold;
+  left: 250px;
+}
+
+div#newHead .headcontain .newTitle .zhengpin {
+  position: absolute;
+  top: 0;
+  left: 77%;
+}
+
+/*登录、搜索*/
+div#bar_bg {
+  border-bottom: 1px solid #4c4d4e;
+  background-color: #1f2122;
+  margin-top: -40px;
+  height: 129px;
+}
+
+div#bar_bg div.shopBar {
+  position: relative;
+  margin: 40px auto 0;
+  width: 1200px;
+}
+
+div#bar_bg div.shopBar::after {
+  content: '';
+  display: block;
+  height: 0;
+  font-size: 0;
+  width: 0;
+  clear: both;
+  overflow: hidden;
+}
+
+div#bar_bg div.shopBar::before {
+  content: "";
+  display: table;
+}
+
+div#bar_bg div.shopBar .shop_logo {
+  float: left;
+  margin-top: 28px;
+  margin-left: 65px;
+  width: 73px;
+  height: 77px;
+  background: url("http://s.yytcdn.com/v2/images/shop-logo-v1.png") no-repeat;
+}
+
+div#bar_bg div.shopBar .shopSearch {
+  position: relative;
+  float: left;
+  margin: 45px 0 0 230px;
+  width: 451px;
+  height: 38px;
+  background: url("http://s.yytcdn.com/v2/images/search_icon.png") no-repeat -1px -44px;
+}
+
+div#bar_bg div.shopBar .shopSearch #input_sear {
+  position: absolute;
+  top: 2px;
+  left: 23px;
+  width: 415px;
+  height: 17px;
+  background: transparent;
+  color: #918f8f;
+  line-height: 17px;
+  padding-top: 9px;
+  overflow: hidden;
+  font-size: 10px;
+}
+
+div#bar_bg div.shopBar .shopSearch .search_btn {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  display: block;
+  width: 24px;
+  height: 39px;
+  background: url("http://s.yytcdn.com/v2/images/search_icon.png") no-repeat -461px 0;
+}
+
+div#bar_bg div.shopBar .shopSearch #shop_recommend {
+  display: none;
+  position: absolute;
+  top: 38px;
+  left: 16px;
+  z-index: 100;
+  width: 418px;
+  border-radius: 0 0 13px 13px;
+  background-color: #fff;
+  border: 1px solid #ff2c72;
+  border-top: none;
+}
+
+div#bar_bg div.shopBar .shopSearch #shop_recommend ul {
+  margin-bottom: 11px;
+}
+
+div#bar_bg div.shopBar .shopSearch #shop_recommend ul p {
+  position: relative;
+  height: 30px;
+  border-bottom: 1px solid #ececec;
+  text-align: center;
+  line-height: 30px;
+  width: 392px;
+  margin: 0 13px 0 13px;
+}
+
+div#bar_bg div.shopBar .shopSearch #shop_recommend ul li {
+  padding: 0 13px;
+  width: 392px;
+  height: 27px;
+  font-size: 14px;
+  line-height: 27px;
+}
+
+div#bar_bg div.shopBar .shopSearch #shop_recommend ul li:hover {
+  background-color: #ececec;
+  color: #ed2164;
+  cursor: pointer;
+}
+
+div#bar_bg div.shopBar .shopSearch #shop_recommend ul li a {
+  display: inline-block;
+  width: 360px;
+  height: 39px;
+  color: #333;
+}
+
+div#bar_bg div.shopBar .shopSearch #shop_recommend ul li a:hover {
+  color: #ed2164;
+}
+
+div#bar_bg div.shopBar .input_active {
+  background: url("http://s.yytcdn.com/v2/images/search_icon.png") no-repeat -1px -1px;
+}
+
+div#bar_bg div.shopBar .input_active #search {
+  background: url("http://s.yytcdn.com/v2/images/search_icon.png") no-repeat -461px -43px;
+}
+
+div#bar_bg div.shopBar .userbox {
+  float: right;
+}
+
+div#bar_bg div.shopBar .userbox .shop_loginBtn, div#bar_bg div.shopBar .userbox .myorder, div#bar_bg div.shopBar .userbox .mycart {
+  float: left;
+  margin-left: 20px;
+  color: #fff;
+  line-height: 129px;
+}
+
+div#bar_bg div.shopBar .userbox .shop_loginBtn:hover, div#bar_bg div.shopBar .userbox .myorder:hover, div#bar_bg div.shopBar .userbox .mycart:hover {
+  color: #ff2c72;
+}
+
+div#bar_bg div.shopBar .userbox .shop_loginBtn {
+  background: url("http://s.yytcdn.com/v2/images/avatar.png") no-repeat 0 51px;
+  padding-left: 35px;
+}
+
+div#bar_bg div.shopBar .userbox .mycart {
+  display: inline-block;
+  width: 63px;
+  height: 17px;
+  background: url("http://s.yytcdn.com/v2/images/cart-logo-v1.png") no-repeat;
+  margin-top: 56px;
+  text-align: right;
+  line-height: 17px;
+  padding-left: 10px;
+}
+
+/*导航栏*/
+div#shopnav_bag {
+  height: 35px;
+  background: #1f2122;
+}
+
+div#shopnav_bag .shopnav {
+  position: relative;
+  margin: 0 auto;
+  width: 1200px;
+}
+
+div#shopnav_bag .shopnav .actor_type {
+  float: left;
+  position: relative;
+  width: 100px;
+  background: #19181b;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  line-height: 35px;
+  cursor: pointer;
+  margin: 0 50px;
+}
+
+div#shopnav_bag .shopnav .actor_type:hover {
+  color: #ff2c72;
+}
+
+div#shopnav_bag .shopnav .actor_type:hover #actorListBox {
+  display: block;
+}
+
+div#shopnav_bag .shopnav .actor_type a {
+  color: #fff;
+}
+
+div#shopnav_bag .shopnav .actor_type a:hover {
+  color: #ff2c72;
+}
+
+div#shopnav_bag .shopnav .actor_type #actorListBox {
+  position: absolute;
+  top: 35px;
+  left: -50px;
+  z-index: 100;
+  display: none;
+  padding: 18px 0 21px 50px;
+  width: 1100px;
+  background: #f3f3f3;
+  box-shadow: 3px 3px 20px #cccccc;
+}
+
+div#shopnav_bag .shopnav .actor_type #actorListBox .actor_list {
+  overflow: hidden;
+}
+
+div#shopnav_bag .shopnav .actor_type #actorListBox .actor_list h4 {
+  float: left;
+  margin-right: 35px;
+  color: #1f2021;
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: bold;
+}
+
+div#shopnav_bag .shopnav .actor_type #actorListBox .actor_list h4:hover {
+  color: #ff2c72;
+  text-decoration: underline;
+}
+
+div#shopnav_bag .shopnav .actor_type #actorListBox .actor_list h4 a {
+  color: #1f2021;
+}
+
+div#shopnav_bag .shopnav .actor_type #actorListBox .actor_list h4 a:hover {
+  color: #ff2c72;
+}
+
+div#shopnav_bag .shopnav .actor_type #actorListBox .actor_list ul {
+  overflow: hidden;
+  width: 920px;
+  height: 32px;
+  float: left;
+}
+
+div#shopnav_bag .shopnav .actor_type #actorListBox .actor_list ul li {
+  float: left;
+  margin-right: 8px;
+  margin-bottom: 12px;
+  width: 176px;
+  text-align: left;
+  line-height: 20px;
+}
+
+div#shopnav_bag .shopnav .actor_type #actorListBox .actor_list ul li a {
+  color: #1f2021;
+  font-size: 14px;
+}
+
+div#shopnav_bag .shopnav .actor_type #actorListBox .actor_list ul li a:hover {
+  color: #cb3567;
+  text-decoration: underline;
+}
+
+div#shopnav_bag .shopnav .actor_type #actorListBox .actor_list .more {
+  display: inline-block;
+  background: url("http://s.yytcdn.com/v2/images/protection/more.png") 0 -31px no-repeat;
+  width: 49px;
+  height: 17px;
+}
+
+div#shopnav_bag .shopnav .actor_type #actorListBox .actor_list .more:hover {
+  background: url("http://s.yytcdn.com/v2/images/protection/more.png") 0 -47px no-repeat;
+}
+
+div#shopnav_bag .shopnav .navbox {
+  float: left;
+  overflow: hidden;
+  padding-left: 35px;
+}
+
+div#shopnav_bag .shopnav .navbox li {
+  float: left;
+  margin-right: 44px;
+  padding: 0 15px;
+  height: 32px;
+  color: #f5f5f5;
+  font-size: 14px;
+  line-height: 35px;
+}
+
+div#shopnav_bag .shopnav .navbox li a {
+  color: #f5f5f5;
+}
+
+div#shopnav_bag .shopnav .navbox li a:hover {
+  color: #ff2c72;
+}
+
+div#shopnav_bag .shopnav .navbox .active {
+  border-bottom: 3px solid #ff2c72;
+}
+
+div#shopnav_bag .shopnav .navbox .active a {
+  color: #ff2c72;
+}
+
+/*轮播图*/
+div#bannerBox {
+  width: 1200px;
+  margin: 0 auto;
+  height: 398px;
+  position: relative;
+}
+
+div#bannerBox #sliderBox {
+  width: 1200px;
+  height: 398px;
+  position: relative;
+  overflow: hidden;
+}
+
+div#bannerBox #sliderBox:hover .swiper_left, div#bannerBox #sliderBox:hover .swiper_right {
+  display: inline;
+}
+
+div#bannerBox #sliderBox .swiper_left {
+  width: 72px;
+  height: 72px;
+  background: url("http://s.yytcdn.com/v2/images/banner_arrow.png")-10px 0 no-repeat;
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  left: 0;
+}
+
+div#bannerBox #sliderBox .swiper_left:hover {
+  background-position: -10px -72px;
+}
+
+div#bannerBox #sliderBox .swiper_right {
+  width: 72px;
+  height: 72px;
+  background: url("http://s.yytcdn.com/v2/images/banner_arrow.png") 0 -144px no-repeat;
+  cursor: pointer;
+  display: none;
+  right: -14px;
+}
+
+div#bannerBox #sliderBox .swiper_right:hover {
+  background-position: 0 -216px;
+}
+
+/*追星必备*/
+div#zhuiBox {
+  width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+div#zhuiBox .zhuixing {
+  background: url("http://s.yytcdn.com/v2/images/zhuxing.png") no-repeat;
+  height: 50px;
+  margin: 18px 0 10px;
+  position: relative;
+}
+
+div#zhuiBox .twoBox {
+  position: relative;
+}
+
+div#zhuiBox .twoBox .arrow_line {
+  width: 1px;
+  height: 13px;
+  background: #fdd4e2;
+  position: absolute;
+  left: 836px;
+  top: -20px;
+}
+
+div#zhuiBox .twoBox .fans {
+  width: 871px;
+  float: left;
+  position: relative;
+  height: 156px;
+  /*包裹自定义分页器的div的位置等CSS样式*/
+  /*自定义分页器的样式，这个你自己想要什么样子自己写*/
+  /*自定义分页器激活时的样式表现*/
+}
+
+div#zhuiBox .twoBox .fans #fans_list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+div#zhuiBox .twoBox .fans #fans_list .fans_track {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+div#zhuiBox .twoBox .fans #fans_list .fans_track::after {
+  content: '';
+  display: block;
+  height: 0;
+  font-size: 0;
+  width: 0;
+  clear: both;
+  overflow: hidden;
+}
+
+div#zhuiBox .twoBox .fans #fans_list .fans_track::before {
+  content: "";
+  display: table;
+}
+
+div#zhuiBox .twoBox .fans #fans_list .fans_track .fans_box {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  width: 218px;
+}
+
+div#zhuiBox .twoBox .fans #fans_list .fans_track .fans_box a {
+  display: block;
+  width: 200px;
+}
+
+div#zhuiBox .twoBox .fans #fans_list .fans_track .fans_box a img {
+  display: block;
+  width: 200px;
+  height: 100px;
+}
+
+div#zhuiBox .twoBox .fans #fans_list .fans_track .fans_box a p {
+  font-size: 14px;
+  color: #474a4b;
+  line-height: 32px;
+  width: 100%;
+  text-align: center;
+  background: #f7f7f7;
+}
+
+div#zhuiBox .twoBox .fans #fans_left {
+  background: url("http://s.yytcdn.com/v2/images/ico.png") 0 -16px no-repeat;
+  width: 10px;
+  height: 12px;
+  position: absolute;
+  top: -20px;
+  left: 818px;
+  margin: 0;
+  cursor: pointer;
+}
+
+div#zhuiBox .twoBox .fans #fans_left:hover {
+  background-position: 0 0;
+}
+
+div#zhuiBox .twoBox .fans #fans_right {
+  background: url("http://s.yytcdn.com/v2/images/ico.png") -12px -16px no-repeat;
+  width: 10px;
+  height: 12px;
+  position: absolute;
+  right: 17px;
+  top: -20px;
+  margin: 0;
+  cursor: pointer;
+}
+
+div#zhuiBox .twoBox .fans #fans_right:hover {
+  background-position: -12px 0;
+}
+
+div#zhuiBox .twoBox .fans .fans_page {
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+}
+
+div#zhuiBox .twoBox .fans .fans_page {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+  background: #ff2c72;
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+  margin: 0 6px;
+}
+
+div#zhuiBox .twoBox .fans .fans_page_active {
+  opacity: 0.85;
+  filter: alpha(opacity=85);
+  background-color: #ff2c72;
+}
+
+div#zhuiBox .twoBox .fuli {
+  float: right;
+}
+
+div#zhuiBox .twoBox .fuli a {
+  display: block;
+  width: 299px;
+  height: 132px;
+}
+
+div#zhuiBox .twoBox .fuli a img {
+  width: 100%;
+}
+
+/*TOP榜*/
+div#topBox {
+  width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+div#topBox .TOP {
+  background: url("http://s.yytcdn.com/v2/images/shop_title2.png") no-repeat 0 -50px;
+  text-align: center;
+  height: 50px;
+  margin: 18px 0 10px;
+  position: relative;
+  font-size: 100%;
+}
+
+div#topBox .TOP .title {
+  color: #494d4e;
+  line-height: 19px;
+  width: 63px;
+  height: 19px;
+  display: inline-block;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+div#topBox .TOP .title_active {
+  color: #fff;
+  background: url("http://s.yytcdn.com/v2/images/chart_bg.png") no-repeat;
+}
+
+div#topBox .goods_chart {
+  display: none;
+  overflow: hidden;
+  padding-top: 5px;
+}
+
+div#topBox .goods_chart li {
+  float: left;
+  width: 126px;
+  margin-left: 16px;
+  border: 1px solid #c3cbcf;
+  padding: 4px;
+  position: relative;
+}
+
+div#topBox .goods_chart li a {
+  display: block;
+  width: 126px;
+  height: 173px;
+}
+
+div#topBox .goods_chart li a span {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  font-size: 25px;
+  top: -1px;
+  left: -1px;
+  color: #333739;
+  background-color: #c3cbcf;
+  text-align: center;
+  line-height: 35px;
+  font-weight: bold;
+}
+
+div#topBox .goods_chart li a img {
+  width: 126px;
+  height: 126px;
+  border: none;
+}
+
+div#topBox .goods_chart li a h4 {
+  font-size: 14px;
+  color: #333739;
+  height: 40px;
+  overflow: hidden;
+  margin: 5px 0 5px;
+  font-weight: 500;
+}
+
+div#topBox .goods_chart li a p {
+  color: #f997b1;
+  text-align: center;
+}
+
+div#topBox .goods_chart .first {
+  margin: 0;
+}
+
+div#topBox .goods_chart .colorful {
+  border: 1px solid #ff2c72;
+}
+
+div#topBox .goods_chart .colorful span {
+  color: #fff;
+  background-color: #f52a6e;
+}
+
+div#topBox .actor_chart {
+  display: block;
+  overflow: hidden;
+  padding-top: 5px;
+}
+
+div#topBox .actor_chart li {
+  float: left;
+  width: 136px;
+  margin-left: 16px;
+  position: relative;
+}
+
+div#topBox .actor_chart li a {
+  display: block;
+  width: 136px;
+  height: 181px;
+}
+
+div#topBox .actor_chart li a span {
+  position: absolute;
+  font-size: 25px;
+  color: #333739;
+  line-height: 35px;
+  font-weight: bold;
+  height: 57px;
+  width: 55px;
+  background: url("http://s.yytcdn.com/v2/images/topten-span_02.png") no-repeat;
+  left: 0;
+  top: 0;
+  text-align: left;
+  text-indent: 11px;
+}
+
+div#topBox .actor_chart li a img {
+  width: 136px;
+  height: 136px;
+  border: none;
+}
+
+div#topBox .actor_chart li a .info {
+  width: 136px;
+  height: 45px;
+  background-color: #fafafa;
+  position: absolute;
+}
+
+div#topBox .actor_chart li a .info h4 {
+  font-size: 14px;
+  color: #333739;
+  width: 136px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: center;
+  font-weight: 600;
+  line-height: 45px;
+}
+
+div#topBox .actor_chart li a .info p {
+  text-align: center;
+  position: absolute;
+  bottom: 45px;
+  background: url("http://s.yytcdn.com/v2/images/mingxing_v1.png") no-repeat;
+  height: 22px;
+  width: 100%;
+}
+
+div#topBox .actor_chart li a .info p i {
+  color: #fff;
+  text-align: center;
+}
+
+div#topBox .actor_chart .first {
+  margin: 0;
+}
+
+div#topBox .actor_chart .colorful span {
+  color: #fff;
+  background: url("http://s.yytcdn.com/v2/images/topten-span_01.png") no-repeat;
+}
+
+/*新品首发*/
+div#newBox {
+  width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+div#newBox .newBox {
+  background: url("http://s.yytcdn.com/v2/images/shop_title2.png") 0 -100px no-repeat;
+  height: 50px;
+  margin: 18px 0 10px;
+  position: relative;
+}
+
+div#newBox .goodsList_new {
+  overflow: hidden;
+  padding-bottom: 20px;
+  width: 1212px;
+}
+
+div#newBox .goodsList_new li {
+  float: left;
+  background: #fff;
+  width: 393px;
+  height: 190px;
+  margin: 0 11px 10px 0;
+}
+
+div#newBox .goodsList_new li:hover {
+  box-shadow: 3px 3px 10px #ccc;
+}
+
+div#newBox .goodsList_new li a {
+  display: block;
+  overflow: hidden;
+}
+
+div#newBox .goodsList_new li a .newGoods_img {
+  float: left;
+  width: 190px;
+  height: 190px;
+}
+
+div#newBox .goodsList_new li a .newGoods_img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+div#newBox .goodsList_new li a .newGoods_info {
+  margin-left: 215px;
+  padding: 35px 25px 0 0;
+}
+
+div#newBox .goodsList_new li a .newGoods_info .newName {
+  color: #494c4d;
+  font-size: 14px;
+  line-height: 1.5em;
+  height: 45px;
+  overflow: hidden;
+}
+
+div#newBox .goodsList_new li a .newGoods_info .newPrice {
+  color: #ff437e;
+  font-size: 14px;
+  margin: 10px 0 13px;
+}
+
+/*大家喜欢*/
+div#we_like {
+  background-color: #f5f5f5;
+  padding-top: 2px;
+}
+
+div#we_like .like_box {
+  width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+div#we_like .like_box .likeBox {
+  background: url("http://s.yytcdn.com/v2/images/shop_title2.png") 0 -150px no-repeat;
+  height: 50px;
+  margin: 18px 0 10px;
+  position: relative;
+  font-size: 100%;
+}
+
+div#we_like .like_box .likeBox #change {
+  position: absolute;
+  right: 0;
+  top: 15px;
+  cursor: pointer;
+}
+
+div#we_like .like_box .likeBox #change:hover {
+  color: #ff437e;
+}
+
+div#we_like .like_box .like_goodsList {
+  overflow: hidden;
+  width: 1212px;
+  padding-bottom: 10px;
+}
+
+div#we_like .like_box .like_goodsList li {
+  display: none;
+  float: left;
+  width: 190px;
+  height: 300px;
+  margin-right: 12px;
+  margin-bottom: 10px;
+  padding: 15px 20px 0;
+  background-color: #fff;
+}
+
+div#we_like .like_box .like_goodsList li:hover {
+  box-shadow: 3px 3px 10px #ccc;
+}
+
+div#we_like .like_box .like_goodsList li .like_a {
+  display: block;
+}
+
+div#we_like .like_box .like_goodsList li .like_a img {
+  width: 190px;
+  height: 190px;
+}
+
+div#we_like .like_box .like_goodsList li .like_a .like_name {
+  height: 45px;
+  color: #5b5b5b;
+  font-size: 14px;
+  overflow: hidden;
+  margin: 10px 0;
+  line-height: 1.5em;
+}
+
+div#we_like .like_box .like_goodsList li .like_a .likeGoods_info .like_price {
+  font-size: 14px;
+  color: #ff447e;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+div#we_like .like_box .like_goodsList li .like_a .likeGoods_info p.like {
+  display: inline-block;
+  float: right;
+}
+
+div#we_like .like_box .like_goodsList .show {
+  display: block;
+}
+
+/*专辑推荐 & 专辑榜*/
+div#albumBox {
+  width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+div#albumBox .albumBox {
+  width: 900px;
+  float: left;
+  padding: 10px 0 50px;
+}
+
+div#albumBox .albumBox .recommended {
+  background: url("http://s.yytcdn.com/v2/images/shop_title2.png") 0 -200px no-repeat;
+  height: 50px;
+  margin: 18px 0 10px;
+  position: relative;
+}
+
+div#albumBox .albumBox .recommended .recommended_link {
+  position: absolute;
+  top: 15px;
+  right: 16px;
+  background: "http://s.yytcdn.com/v2/images/ico.png" 0 -31px no-repeat;
+  width: 18px;
+  height: 18px;
+}
+
+div#albumBox .albumBox .recommended .recommended_link:hover {
+  background-position: 0 -51px;
+}
+
+div#albumBox .albumBox .albumList {
+  overflow: hidden;
+  padding-top: 10px;
+}
+
+div#albumBox .albumBox .albumList li {
+  float: left;
+  width: 172px;
+  height: 238px;
+  background: #f7f7f7;
+  margin: 0 17px 16px 0;
+}
+
+div#albumBox .albumBox .albumList li:hover {
+  box-shadow: 3px 3px 10px #ccc;
+}
+
+div#albumBox .albumBox .albumList li a {
+  display: block;
+  height: 100%;
+}
+
+div#albumBox .albumBox .albumList li a img {
+  width: 172px;
+  height: 172px;
+}
+
+div#albumBox .albumBox .albumList li a .goodsName {
+  text-align: center;
+  padding: 5px;
+  color: #484b4d;
+  font-size: 14px;
+  width: 162px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+div#albumBox .albumBox .albumList li a p.like {
+  padding: 0 10px;
+  text-align: center;
+}
+
+div#albumBox .albumBox .albumList .album_first {
+  width: 315px;
+  height: 493px;
+}
+
+div#albumBox .albumBox .albumList .album_first img {
+  width: 315px;
+  height: 493px;
+}
+
+div#albumBox .albumRank {
+  width: 300px;
+  float: left;
+  padding: 10px 0 50px;
+}
+
+div#albumBox .albumRank .chart {
+  background: url("http://s.yytcdn.com/v2/images/shop_title2.png") 0 -450px no-repeat;
+  height: 50px;
+  margin: 18px 0 10px;
+  position: relative;
+}
+
+div#albumBox .albumRank .chart .chart_link {
+  position: absolute;
+  top: 15px;
+  right: 16px;
+  background: "http://s.yytcdn.com/v2/images/ico.png" 0 -31px no-repeat;
+  width: 18px;
+  height: 18px;
+}
+
+div#albumBox .albumRank .chart .chart_link:hover {
+  background-position: 0 -51px;
+}
+
+div#albumBox .albumRank .two_box {
+  padding-top: 10px;
+}
+
+div#albumBox .albumRank .two_box .albumSale {
+  display: inline-block;
+  background-color: #eee;
+  width: 102px;
+  height: 26px;
+  line-height: 26px;
+  text-align: center;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+div#albumBox .albumRank .two_box .albumSaleActive {
+  background-color: #f9c9d9;
+}
+
+div#albumBox .albumRank .mainland .movein, div#albumBox .albumRank .import .movein {
+  height: 131px;
+}
+
+div#albumBox .albumRank .mainland .movein .rankNum, div#albumBox .albumRank .import .movein .rankNum {
+  height: 131px;
+  line-height: 131px;
+  background-color: #ff2c72;
+}
+
+div#albumBox .albumRank .mainland .movein a, div#albumBox .albumRank .import .movein a {
+  height: 131px;
+}
+
+div#albumBox .albumRank .mainland .movein a img, div#albumBox .albumRank .import .movein a img {
+  width: 131px;
+  height: 131px;
+}
+
+div#albumBox .albumRank .mainland .movein a .goodsName, div#albumBox .albumRank .import .movein a .goodsName {
+  text-overflow: clip;
+  white-space: normal;
+  max-height: 90px;
+  width: 112px;
+  margin-left: 174px;
+}
+
+div#albumBox .albumRank .mainland {
+  padding-top: 10px;
+}
+
+div#albumBox .albumRank .mainland li {
+  width: 300px;
+  height: 71px;
+  margin-bottom: 11px;
+  background: #f7f7f7;
+  overflow: hidden;
+}
+
+div#albumBox .albumRank .mainland li::after {
+  content: '';
+  display: block;
+  height: 0;
+  font-size: 0;
+  width: 0;
+  clear: both;
+  overflow: hidden;
+}
+
+div#albumBox .albumRank .mainland li::before {
+  content: "";
+  display: table;
+}
+
+div#albumBox .albumRank .mainland li .rankNum {
+  width: 30px;
+  text-align: center;
+  line-height: 71px;
+  color: #fff;
+  float: left;
+  background-color: #c3cbcf;
+  margin-right: 2px;
+  font-size: 25px;
+}
+
+div#albumBox .albumRank .mainland li a {
+  display: block;
+  height: 71px;
+}
+
+div#albumBox .albumRank .mainland li a img {
+  width: 71px;
+  height: 71px;
+  float: left;
+}
+
+div#albumBox .albumRank .mainland li a .goodsName {
+  font-size: 14px;
+  color: #9d9e9f;
+  margin-left: 120px;
+  width: 168px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 30px;
+  position: relative;
+  top: 23px;
+}
+
+div#albumBox .albumRank .import {
+  padding-top: 10px;
+}
+
+div#albumBox .albumRank .import li {
+  width: 300px;
+  height: 71px;
+  margin-bottom: 11px;
+  background: #f7f7f7;
+  overflow: hidden;
+}
+
+div#albumBox .albumRank .import li::after {
+  content: '';
+  display: block;
+  height: 0;
+  font-size: 0;
+  width: 0;
+  clear: both;
+  overflow: hidden;
+}
+
+div#albumBox .albumRank .import li::before {
+  content: "";
+  display: table;
+}
+
+div#albumBox .albumRank .import li .rankNum {
+  width: 30px;
+  text-align: center;
+  line-height: 71px;
+  color: #fff;
+  float: left;
+  background-color: #c3cbcf;
+  margin-right: 2px;
+  font-size: 25px;
+}
+
+div#albumBox .albumRank .import li a {
+  display: block;
+  height: 71px;
+}
+
+div#albumBox .albumRank .import li a img {
+  width: 71px;
+  height: 71px;
+  float: left;
+}
+
+div#albumBox .albumRank .import li a .goodsName {
+  font-size: 14px;
+  color: #9d9e9f;
+  margin-left: 120px;
+  width: 168px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 30px;
+  position: relative;
+  top: 23px;
+}
+
+/*灰色大块区域*/
+div#gray_bigBox {
+  background: #f5f5f5;
+  padding: 10px 0 40px;
+  /*爆款周边*/
+  /*活动专区*/
+  /*热卖商品*/
+  /*华娱商品*/
+}
+
+div#gray_bigBox .goodsBox .nearBox, div#gray_bigBox .goodsBox .specialBox, div#gray_bigBox .goodsBox .hotBox, div#gray_bigBox .goodsBox .chinaBox {
+  background: url("http://s.yytcdn.com/v2/images/shop_title2.png") no-repeat;
+  height: 50px;
+  margin: 18px 0 10px;
+  position: relative;
+}
+
+div#gray_bigBox .goodsBox .nearBox a, div#gray_bigBox .goodsBox .specialBox a, div#gray_bigBox .goodsBox .hotBox a, div#gray_bigBox .goodsBox .chinaBox a {
+  position: absolute;
+  background: url("http://s.yytcdn.com/v2/images/ico.png") 0 -31px no-repeat;
+  width: 18px;
+  height: 18px;
+  right: 0;
+  top: 15px;
+}
+
+div#gray_bigBox .goodsBox .nearBox a:hover, div#gray_bigBox .goodsBox .specialBox a:hover, div#gray_bigBox .goodsBox .hotBox a:hover, div#gray_bigBox .goodsBox .chinaBox a:hover {
+  background-position: 0 -51px;
+}
+
+div#gray_bigBox .goodsBox .nearList, div#gray_bigBox .goodsBox .specialList, div#gray_bigBox .goodsBox .hotList, div#gray_bigBox .goodsBox .chinaList {
+  overflow: hidden;
+  width: 1212px;
+  padding-bottom: 10px;
+}
+
+div#gray_bigBox .goodsBox .nearList li, div#gray_bigBox .goodsBox .specialList li, div#gray_bigBox .goodsBox .hotList li, div#gray_bigBox .goodsBox .chinaList li {
+  float: left;
+  width: 190px;
+  height: 300px;
+  margin-right: 12px;
+  margin-bottom: 10px;
+  padding: 15px 20px 0;
+  background: #fff;
+}
+
+div#gray_bigBox .goodsBox .nearList li:hover, div#gray_bigBox .goodsBox .specialList li:hover, div#gray_bigBox .goodsBox .hotList li:hover, div#gray_bigBox .goodsBox .chinaList li:hover {
+  box-shadow: 3px 3px 10px #ccc;
+}
+
+div#gray_bigBox .goodsBox .nearList li a .goodsList_info .goods_price, div#gray_bigBox .goodsBox .specialList li a .goodsList_info .goods_price, div#gray_bigBox .goodsBox .hotList li a .goodsList_info .goods_price, div#gray_bigBox .goodsBox .chinaList li a .goodsList_info .goods_price {
+  font-size: 14px;
+  color: #ff447e;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+div#gray_bigBox .goodsBox .nearList li a .goodsList_info p.like, div#gray_bigBox .goodsBox .specialList li a .goodsList_info p.like, div#gray_bigBox .goodsBox .hotList li a .goodsList_info p.like, div#gray_bigBox .goodsBox .chinaList li a .goodsList_info p.like {
+  display: inline-block;
+  float: right;
+  margin-right: 8px;
+}
+
+div#gray_bigBox .goodsBox {
+  width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+div#gray_bigBox .goodsBox .nearBox {
+  background-position: 0 -250px;
+}
+
+div#gray_bigBox .goodsBox .nearList li a {
+  display: block;
+}
+
+div#gray_bigBox .goodsBox .nearList li a img {
+  width: 190px;
+  height: 190px;
+}
+
+div#gray_bigBox .goodsBox .nearList li a .actorName {
+  color: #6a6a6a;
+  font-size: 14px;
+  text-align: center;
+  padding-top: 5px;
+}
+
+div#gray_bigBox .goodsBox .nearList li a .goodsName {
+  width: 190px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  height: auto;
+  text-align: center;
+  font-size: 14px;
+  margin: 10px 0;
+  color: #5b5b5b;
+}
+
+div#gray_bigBox .goodsBox {
+  width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+div#gray_bigBox .goodsBox .specialBox {
+  background-position: 0 -300px;
+}
+
+div#gray_bigBox .goodsBox .specialList li {
+  width: 250px;
+  height: 400px;
+}
+
+div#gray_bigBox .goodsBox .specialList li a {
+  display: block;
+}
+
+div#gray_bigBox .goodsBox .specialList li a .actorName {
+  color: #333739;
+  font-size: 14px;
+  text-align: center;
+  padding-top: 5px;
+  height: 21px;
+}
+
+div#gray_bigBox .goodsBox .specialList li a .goodsName {
+  overflow: hidden;
+  height: 45px;
+  font-size: 14px;
+  margin: 10px 0;
+  color: #5b5b5b;
+}
+
+div#gray_bigBox .goodsBox .specialList li a .goodsList_info {
+  margin-bottom: 20px;
+}
+
+div#gray_bigBox .goodsBox .specialList li a img {
+  width: 250px;
+  height: 250px;
+}
+
+div#gray_bigBox .goodsBox {
+  width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+div#gray_bigBox .goodsBox .hotBox {
+  background-position: 0 -350px;
+}
+
+div#gray_bigBox .goodsBox .hotList li a {
+  display: block;
+}
+
+div#gray_bigBox .goodsBox .hotList li a img {
+  width: 190px;
+  height: 190px;
+}
+
+div#gray_bigBox .goodsBox .hotList li a .goodsName {
+  overflow: hidden;
+  height: 45px;
+  line-height: 1.5em;
+  font-size: 14px;
+  margin: 10px 0;
+  color: #5b5b5b;
+}
+
+div#gray_bigBox .goodsBox {
+  width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+div#gray_bigBox .goodsBox .chinaBox {
+  background-position: 0 -400px;
+}
+
+div#gray_bigBox .goodsBox .chinaList li a {
+  display: block;
+}
+
+div#gray_bigBox .goodsBox .chinaList li a img {
+  width: 190px;
+  height: 190px;
+}
+
+div#gray_bigBox .goodsBox .chinaList li a .goodsName {
+  overflow: hidden;
+  height: 45px;
+  line-height: 1.5em;
+  font-size: 14px;
+  margin: 10px 0;
+  color: #5b5b5b;
+}
+
+/*底部*/
+div#footImg {
+  margin: 60px auto 25px;
+  width: 1200px;
+  height: 57px;
+  background: url("http://s.yytcdn.com/v2/images/footer_v180123.png") no-repeat;
+}
+
+div#foot {
+  min-width: 1000px;
+  color: #999;
+  line-height: 22px;
+  text-align: center;
+  background: #181818;
+  height: 260px;
+}
+
+div#foot .contact {
+  font-size: 14px;
+  padding: 35px 0 20px;
+  color: #666;
+}
+
+div#foot .contact a {
+  color: #666;
+}
+
+div#foot .contact a:hover {
+  color: #52e2c0;
+  width: 100%;
+}
+
+div#foot .contact span {
+  width: 2px;
+  height: 10px;
+  margin: 0 8px;
+  display: inline-block;
+  overflow: hidden;
+  background: url("http://s.yytcdn.com/v2/images/base/ico/ico_index.png") -70px 0 no-repeat;
+}
+
+div#foot .copyright a {
+  color: #999;
+}
+
+div#foot .copyright a:hover {
+  color: #52e2c0;
+  width: 100%;
+}
+
+div#foot .copyright a .wenhua {
+  width: 25px;
+  height: 25px;
+  margin-right: 3px;
+}
+
+div#foot .food_license a {
+  color: #999;
+}
+
+/*侧边菜单栏*/
+div#sidebar {
+  position: fixed;
+  bottom: 10%;
+  right: 5px;
+  width: 62px;
+  height: 241px;
+}
+
+div#sidebar a {
+  display: block;
+  margin-bottom: 8px;
+  width: 60px;
+  height: 60px;
+  background: url("http://s.yytcdn.com/v2/images/menu_v3.png") no-repeat;
+}
+
+div#sidebar .shop_cart {
+  background-position: -3px -3px;
+}
+
+div#sidebar .shop_cart:hover {
+  background-position: -75px -3px;
+}
+
+div#sidebar .shop_cart:hover #cartNum {
+  color: #f52a6e;
+  background-position: 0 0;
+}
+
+div#sidebar .shop_cart #cartNum {
+  position: relative;
+  top: -5px;
+  left: 19px;
+  display: inline-block;
+  width: 22px;
+  height: 23px;
+  background: url("http://s.yytcdn.com/v2/images/cart_num.png") no-repeat -25px 0;
+  color: #fff;
+  text-align: center;
+  line-height: 23px;
+}
+
+div#sidebar .service {
+  background-position: -3px -64px;
+}
+
+div#sidebar .service:hover {
+  background-position: -75px -64px;
+}
+
+div#sidebar .notice {
+  background-position: -3px -125px;
+}
+
+div#sidebar .notice:hover {
+  background-position: -75px -125px;
+}
+
+div#sidebar #return_top {
+  display: none;
+  height: 62px;
+  background-position: -3px -186px;
+}
+
+div#sidebar #return_top:hover {
+  background-position: -75px -186px;
+}
+
+div#back {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 101;
+}
+
+div#back * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 12px;
+}
+
+div#back .banner {
+  position: absolute;
+  width: 750px;
+  height: 380px;
+  margin: auto;
+  border-radius: 3px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: url("http://img1.c.yinyuetai.com/others/admin/161222/0/3efa00caa6322aa820e87e58272ccfe3_0x0.jpg") no-repeat;
+}
+
+div#back .banner #close {
+  width: 15px;
+  height: 15px;
+  border: none;
+  cursor: pointer;
+  color: #999;
+  text-align: center;
+  line-height: 15px;
+  border-radius: 2px;
+  font-weight: bold;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+div#back .banner #close:hover {
+  background-color: red;
+  color: #fff;
+}
+
+div#back .banner #login_box {
+  width: 400px;
+  height: 380px;
+  float: right;
+}
+
+div#back .banner #login_box #loginbar {
+  font-size: 20px;
+  color: #474c56;
+  line-height: 72px;
+  height: 72px;
+  cursor: pointer;
+}
+
+div#back .banner #login_box #loginbar div {
+  height: 71px;
+  font-size: 20px;
+  border-bottom: 1px solid #e1e1e7;
+  text-align: center;
+}
+
+div#back .banner #login_box #loginbar div:hover {
+  color: #27D5BF;
+}
+
+div#back .banner #login_box #loginbar .login_active {
+  height: 70px;
+  border-bottom: 2px solid #27D5BF;
+  color: #27D5BF;
+  text-align: center;
+}
+
+div#back .banner #login_box #login_area {
+  display: block;
+  margin-top: 30px;
+}
+
+div#back .banner #login_box #login_area .input {
+  height: 40px;
+  border-radius: 2px;
+}
+
+div#back .banner #login_box #login_area #login {
+  cursor: pointer;
+  background-color: #27d5bf;
+  color: #fff;
+  font-size: 18px;
+  height: 40px;
+  line-height: 28px;
+}
+
+div#back .banner #login_box #login_area #login:hover {
+  background-color: #3ae9d3;
+}
+
+div#back .banner #login_box #login_area .checkbox {
+  color: #999;
+}
+
+div#back .banner #login_box #login_area .checkbox .forget {
+  color: #999;
+  cursor: pointer;
+}
+
+div#back .banner #login_box #login_area .checkbox .forget:hover {
+  color: #27d5bf;
+}
+
+div#back .banner #login_box #login_area #third_login {
+  margin-top: 25px;
+}
+
+div#back .banner #login_box #login_area #third_login span {
+  padding: 0;
+  color: #999;
+  height: 24px;
+  line-height: 24px;
+}
+
+div#back .banner #login_box #login_area #third_login span a {
+  display: inline-block;
+  background: url("http://s.yytcdn.com/v2/images/modules/login-register/ui.png") no-repeat;
+  width: 29px;
+  height: 24px;
+}
+
+div#back .banner #login_box #login_area #third_login span .sina {
+  background-position: 0 -159px;
+}
+
+div#back .banner #login_box #login_area #third_login span .sina:hover {
+  background-position: 0 -125px;
+}
+
+div#back .banner #login_box #login_area #third_login span .weixin {
+  background-position: 0 -226px;
+}
+
+div#back .banner #login_box #login_area #third_login span .weixin:hover {
+  background-position: 0 -193px;
+}
+
+div#back .banner #login_box #login_area #third_login span .qq {
+  background-position: 0 -52px;
+}
+
+div#back .banner #login_box #login_area #third_login span .qq:hover {
+  background-position: 0 -19px;
+}
+
+div#back .banner #login_box #regsiter_area {
+  display: none;
+  margin-top: 30px;
+}
+
+div#back .banner #login_box #regsiter_area .input {
+  height: 40px;
+  border-radius: 2px;
+}
+
+div#back .banner #login_box #regsiter_area #regsiter {
+  cursor: pointer;
+  background-color: #27d5bf;
+  color: #fff;
+  font-size: 18px;
+  height: 40px;
+  line-height: 28px;
+}
+
+div#back .banner #login_box #regsiter_area #regsiter:hover {
+  background-color: #3ae9d3;
+}
+
+div#back .banner #login_box #regsiter_area .auth_code {
+  width: 122px;
+  height: 40px;
+  line-height: 40px;
+  cursor: pointer;
+  color: #767676;
+  background-color: #eee;
+  margin-left: 10px;
+  text-align: center;
+}
+
+div#back .banner #login_box #regsiter_area .auth_code:hover {
+  background-color: #d5d5d5;
+}

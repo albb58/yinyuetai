@@ -1,0 +1,17 @@
+<script id="goods" type="text/html">
+    {{each list}}
+        <li>
+            <a href="">
+                <img id="{{$value.id}}" src="{{$value.headImg}}" alt="{{$value.simName}}" >
+                <p class="goods-list-name">{{@ $value.name}}</p>
+            </a>
+            <div class="goods-list-info">
+                <p class="goods-list-price">{{@ '¥'+$value.price}}</p>
+                <p class="like">
+                    <span class="heart"></span>
+                    <i>{{@ $value.favoNum}}</i>
+                </p>
+            </div>
+        </li>
+    {{/each}}
+</script>

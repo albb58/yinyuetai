@@ -1,0 +1,61 @@
+<script id="we_Like" type="text/html">
+    {{each list}}
+        {{if $index < 5}}
+            <li class="li0 show">
+                <a href="{{$value.goodsUrl}}" class="like_a">
+                    <img id="{{$value.goodsId}}" src="{{$value.imgUrl}}" alt="{{$value.goodsName}}" >
+                    <p class="like_name">{{@ $value.goodsName}}</p>
+                    <div class="likeGoods_info">
+                        <p class="like_price">{{@ '¥'+$value.realPrice}}</p>
+                        <p class="like">
+                            <span class="heart"></span>
+                            <i>{{@ $value.faveNum}}</i>
+                        </p>
+                    </div>   
+                </a>
+            </li>
+        {{else if $index < 10}}
+            <li class="li1">
+                <a href="{{$value.goodsUrl}}" class="like_a">
+                    <img id="{{$value.goodsId}}" src="{{$value.imgUrl}}" alt="{{$value.goodsName}}" >
+                    <p class="like_name">{{@ $value.goodsName}}</p>
+                    <div class="likeGoods_info">
+                        <p class="like_price">{{@ '¥'+$value.realPrice}}</p>
+                        <p class="like">
+                            <span class="heart"></span>
+                            <i>{{@ $value.faveNum}}</i>
+                        </p>
+                    </div>   
+                </a>
+            </li>
+        {{else if $index < 15}}
+            <li class="li2">
+                <a href="{{$value.goodsUrl}}" class="like_a">
+                    <img id="{{$value.goodsId}}" src="{{$value.imgUrl}}" alt="{{$value.goodsName}}" >
+                    <p class="like_name">{{@ $value.goodsName}}</p>
+                    <div class="likeGoods_info">
+                        <p class="like_price">{{@ '¥'+$value.realPrice}}</p>
+                        <p class="like">
+                            <span class="heart"></span>
+                            <i>{{@ $value.faveNum}}</i>
+                        </p>
+                    </div>   
+                </a>
+            </li>
+        {{else if $index < 20}}
+            <li class="li3">
+                <a href="{{$value.goodsUrl}}" class="like_a">
+                    <img id="{{$value.goodsId}}" src="{{$value.imgUrl}}" alt="{{$value.goodsName}}" >
+                    <p class="like_name">{{@ $value.goodsName}}</p>
+                    <div class="likeGoods_info">
+                        <p class="like_price">{{@ '¥'+$value.realPrice}}</p>
+                        <p class="like">
+                            <span class="heart"></span>
+                            <i>{{@ $value.faveNum}}</i>
+                        </p>
+                    </div>   
+                </a>
+            </li>
+        {{/if}}
+    {{/each}}
+</script>

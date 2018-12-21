@@ -1,0 +1,19 @@
+<script id="new-Goods" type="text/html">
+    {{each list}}
+        <li>
+            <a href="{{$value.goodsUrl}}">
+                <div class="newGoods_img">
+                    <img id="{{$value.goodsId}}" src="{{$value.imgUrl}}" alt="{{$value.goodsName}}" >
+                </div>
+                <div class="newGoods_info">
+                    <p class="newName">{{@ $value.goodsName}}</p>
+                    <p class="newPrice">{{@ '¥'+$value.realPrice}}</p>
+                    <p class="like">
+                        <span class="heart"></span>
+                        <i>{{@ $value.faveNum}}</i>
+                    </p>
+                </div>
+            </a>
+        </li>
+    {{/each}}
+</script>

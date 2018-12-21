@@ -1,0 +1,19 @@
+@mixin opacity($val){
+    opacity: $val/100;
+    filter: alpha(opacity=$val);
+}
+@mixin clearfix {
+    &::after{
+        content: '';
+        display: block;
+        height: 0;
+        font-size: 0;
+        width: 0;
+        clear: both;
+        overflow: hidden;
+    }
+    &::before {
+        content: "";
+        display: table;
+    }
+}

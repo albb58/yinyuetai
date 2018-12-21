@@ -1,0 +1,11 @@
+
+<script id="hot_shop" type="text/html">
+    <p>热门搜索</p>
+    <% for(var i=0; i<list.length; i++) { %>
+        <li >
+            <a  href="<%='/proxy/shop.yinyuetai.com' + list[i].link%>">
+                <%- list[i].name%>
+            </a>
+        </li>
+    <% } %>
+</script> 

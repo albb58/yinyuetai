@@ -1,0 +1,79 @@
+<script id="top-goods" type="text/html">
+    <% for(let i=0; i<list.length; i++) { %>
+        {{if i==0}}
+            <li class="first colorful">
+                <a  href="<%=list[i].goodsUrl%>">
+                    <span>{{@ i+1}}</span>
+                    <img id="<%=list[i].goodsId%>" src="<%=list[i].imgUrl%>" alt="<%=list[i].goodsName%>" >
+                    <h4>{{@ list[i].goodsName}}</h4>
+                    <p>{{@ list[i].sellNum}}</p>
+                </a>
+            </li>
+        {{else if i<=2}}
+            <li class="colorful">
+                <a  href="<%=list[i].goodsUrl%>">
+                    <span>{{@ i+1}}</span>
+                    <img id="<%=list[i].goodsId%>" src="<%=list[i].imgUrl%>" alt="<%=list[i].goodsName%>" >
+                    <h4>{{@ list[i].goodsName}}</h4>
+                    <p>{{@ list[i].sellNum}}</p>
+                </a>
+            </li>
+        {{else if i>2}}
+            <li>
+                <a  href="<%=list[i].goodsUrl%>">
+                    <span>{{@ i+1}}</span>
+                    <img id="<%=list[i].goodsId%>" src="<%=list[i].imgUrl%>" alt="<%=list[i].goodsName%>" >
+                    <h4>{{@ list[i].goodsName}}</h4>
+                    <p>{{@ list[i].sellNum}}</p>
+                </a>
+            </li>
+        {{/if}}
+    <% } %>
+</script>
+<script id="top-actor" type="text/html">
+    <% for(let i=0; i<list.length; i++) { %>
+            {{if i==0}}
+                <li class="first colorful">
+                    <a  href="">
+                        <span>{{@ i+1}}</span>
+                        <img id="<%=list[i].artistId%>" src="<%=list[i].artistImg%>" alt="<%=list[i].artistName%>" >
+                        <div class="info">
+                            <h4>{{@ list[i].artistName}}</h4>
+                            <p>
+                                <i>销量</i>
+                                <i>{{@ list[i].sellNum}}</i>
+                            </p>
+                        </div>
+                    </a>
+                </li>
+            {{else if i<=2}}
+                <li class="colorful">
+                    <a  href="">
+                        <span>{{@ i+1}}</span>
+                        <img id="<%=list[i].artistId%>" src="<%=list[i].artistImg%>" alt="<%=list[i].artistName%>" >
+                        <div class="info">
+                            <h4>{{@ list[i].artistName}}</h4>
+                            <p>
+                                <i>销量</i>
+                                <i>{{@ list[i].sellNum}}</i>
+                            </p>
+                        </div>
+                    </a>
+                </li>
+            {{else}}
+                <li>
+                    <a  href="">
+                        <span>{{@ i+1}}</span>
+                        <img id="<%=list[i].artistId%>" src="<%=list[i].artistImg%>" alt="<%=list[i].artistName%>" >
+                        <div class="info">
+                            <h4>{{@ list[i].artistName}}</h4>
+                            <p>
+                                <i>销量</i>
+                                <i>{{@ list[i].sellNum}}</i>
+                            </p>
+                        </div>
+                    </a>
+                </li>
+            {{/if}}
+        <% } %>
+</script>

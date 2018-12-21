@@ -1,0 +1,1099 @@
+@charset "UTF-8";
+body, p, h1, h2, h3, h4, h5, h6, ul, dl, dd, td, input, fieldset, textarea, option {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+img {
+  border: none;
+  vertical-align: top;
+}
+
+a, input {
+  outline: none;
+  border: none;
+}
+
+h1, h2, h3, h4, h5, h6, b, strong {
+  font-weight: 100;
+  font-size: 100%;
+}
+
+i, em {
+  font-style: normal;
+}
+
+body {
+  font: 12px "微软雅黑";
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+  height: 0;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.w-max {
+  width: 100%;
+}
+
+.h-max {
+  height: 100%;
+}
+
+.wh-max {
+  width: 100%;
+  height: 100%;
+}
+
+/*定义变量*/
+div#newHead .headcontain .newTitle .sina .codeSina p.scan, div#newHead .headcontain .newTitle .weixin .codeWeixin p.scan {
+  color: #ff2c72;
+  margin-top: -12px;
+}
+
+div#newHead .headcontain .newTitle .sina .codeSina p.scanMore, div#newHead .headcontain .newTitle .weixin .codeWeixin p.scanMore {
+  font-size: 12px;
+  color: #1f2021;
+  margin-top: -11px;
+}
+
+/*顶部*/
+div#newHead {
+  height: 30px;
+  width: 100%;
+  background-color: #1c1d1e;
+}
+
+div#newHead .headcontain {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+div#newHead .headcontain a .yinyueLoGo {
+  background: url("http://s.yytcdn.com/v2/images/yinLogo.png");
+  height: 30px;
+  width: 55px;
+  margin-left: 15px;
+}
+
+div#newHead .headcontain .newTitle {
+  position: relative;
+  font-size: 12px;
+  color: #9B9B9C;
+  line-height: 30px;
+  margin-left: 67%;
+}
+
+div#newHead .headcontain .newTitle .sina, div#newHead .headcontain .newTitle .weixin {
+  top: 0;
+  width: 135px;
+  text-align: center;
+  z-index: 100;
+  cursor: pointer;
+  padding: 0 10px;
+}
+
+div#newHead .headcontain .newTitle .sina {
+  position: absolute;
+}
+
+div#newHead .headcontain .newTitle .sina:hover {
+  background-color: #fff;
+}
+
+div#newHead .headcontain .newTitle .sina:hover div.codeSina {
+  display: block;
+}
+
+div#newHead .headcontain .newTitle .sina .codeSina {
+  display: none;
+}
+
+div#newHead .headcontain .newTitle .sina .codeSina img {
+  width: 100%;
+}
+
+div#newHead .headcontain .newTitle .Separate1, div#newHead .headcontain .newTitle .Separate2, div#newHead .headcontain .newTitle .zhengpin {
+  margin-left: 40px;
+  cursor: pointer;
+}
+
+div#newHead .headcontain .newTitle .Separate1 {
+  position: absolute;
+  color: #2f3031;
+  font-weight: bold;
+  left: 100px;
+}
+
+div#newHead .headcontain .newTitle .weixin {
+  position: absolute;
+  left: 36%;
+}
+
+div#newHead .headcontain .newTitle .weixin:hover {
+  background-color: #fff;
+}
+
+div#newHead .headcontain .newTitle .weixin:hover div.codeWeixin {
+  display: block;
+}
+
+div#newHead .headcontain .newTitle .weixin .codeWeixin {
+  display: none;
+}
+
+div#newHead .headcontain .newTitle .weixin .codeWeixin img {
+  width: 100%;
+}
+
+div#newHead .headcontain .newTitle .Separate2 {
+  position: absolute;
+  color: #2f3031;
+  font-weight: bold;
+  left: 250px;
+}
+
+div#newHead .headcontain .newTitle .zhengpin {
+  position: absolute;
+  top: 0;
+  left: 77%;
+}
+
+/*登录、搜索*/
+div#bar_bg {
+  border-bottom: 1px solid #4c4d4e;
+  background-color: #1f2122;
+  margin-top: -40px;
+  height: 129px;
+}
+
+div#bar_bg div.shopBar {
+  position: relative;
+  margin: 40px auto 0;
+  width: 1200px;
+}
+
+div#bar_bg div.shopBar::after {
+  content: '';
+  display: block;
+  height: 0;
+  font-size: 0;
+  width: 0;
+  clear: both;
+  overflow: hidden;
+}
+
+div#bar_bg div.shopBar::before {
+  content: "";
+  display: table;
+}
+
+div#bar_bg div.shopBar .shop_logo {
+  float: left;
+  margin-top: 28px;
+  margin-left: 65px;
+  width: 73px;
+  height: 77px;
+  background: url("http://s.yytcdn.com/v2/images/shop-logo-v1.png") no-repeat;
+}
+
+div#bar_bg div.shopBar .shopSearch {
+  position: relative;
+  float: left;
+  margin: 45px 0 0 230px;
+  width: 451px;
+  height: 38px;
+  background: url("http://s.yytcdn.com/v2/images/search_icon.png") no-repeat -1px -44px;
+}
+
+div#bar_bg div.shopBar .shopSearch #input_sear {
+  position: absolute;
+  top: 2px;
+  left: 23px;
+  width: 415px;
+  height: 17px;
+  background: transparent;
+  color: #918f8f;
+  line-height: 17px;
+  padding-top: 9px;
+  overflow: hidden;
+  font-size: 10px;
+}
+
+div#bar_bg div.shopBar .shopSearch .search_btn {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  display: block;
+  width: 24px;
+  height: 39px;
+  background: url("http://s.yytcdn.com/v2/images/search_icon.png") no-repeat -461px 0;
+}
+
+div#bar_bg div.shopBar .shopSearch #shop_recommend {
+  display: none;
+  position: absolute;
+  top: 38px;
+  left: 16px;
+  z-index: 100;
+  width: 418px;
+  border-radius: 0 0 13px 13px;
+  background-color: #fff;
+  border: 1px solid #ff2c72;
+  border-top: none;
+}
+
+div#bar_bg div.shopBar .shopSearch #shop_recommend ul {
+  margin-bottom: 11px;
+}
+
+div#bar_bg div.shopBar .shopSearch #shop_recommend ul p {
+  position: relative;
+  height: 30px;
+  border-bottom: 1px solid #ececec;
+  text-align: center;
+  line-height: 30px;
+  width: 392px;
+  margin: 0 13px 0 13px;
+}
+
+div#bar_bg div.shopBar .shopSearch #shop_recommend ul li {
+  padding: 0 13px;
+  width: 392px;
+  height: 27px;
+  font-size: 14px;
+  line-height: 27px;
+}
+
+div#bar_bg div.shopBar .shopSearch #shop_recommend ul li:hover {
+  background-color: #ececec;
+  color: #ed2164;
+  cursor: pointer;
+}
+
+div#bar_bg div.shopBar .shopSearch #shop_recommend ul li a {
+  display: inline-block;
+  width: 360px;
+  height: 39px;
+  color: #333;
+}
+
+div#bar_bg div.shopBar .shopSearch #shop_recommend ul li a:hover {
+  color: #ed2164;
+}
+
+div#bar_bg div.shopBar .input_active {
+  background: url("http://s.yytcdn.com/v2/images/search_icon.png") no-repeat -1px -1px;
+}
+
+div#bar_bg div.shopBar .input_active #search {
+  background: url("http://s.yytcdn.com/v2/images/search_icon.png") no-repeat -461px -43px;
+}
+
+div#bar_bg div.shopBar .userbox {
+  float: right;
+}
+
+div#bar_bg div.shopBar .userbox .shop_loginBtn, div#bar_bg div.shopBar .userbox .myorder, div#bar_bg div.shopBar .userbox .mycart {
+  float: left;
+  margin-left: 20px;
+  color: #fff;
+  line-height: 129px;
+}
+
+div#bar_bg div.shopBar .userbox .shop_loginBtn:hover, div#bar_bg div.shopBar .userbox .myorder:hover, div#bar_bg div.shopBar .userbox .mycart:hover {
+  color: #ff2c72;
+}
+
+div#bar_bg div.shopBar .userbox .shop_loginBtn {
+  background: url("http://s.yytcdn.com/v2/images/avatar.png") no-repeat 0 51px;
+  padding-left: 35px;
+}
+
+div#bar_bg div.shopBar .userbox .mycart {
+  display: inline-block;
+  width: 63px;
+  height: 17px;
+  background: url("http://s.yytcdn.com/v2/images/cart-logo-v1.png") no-repeat;
+  margin-top: 56px;
+  text-align: right;
+  line-height: 17px;
+  padding-left: 10px;
+}
+
+/*导航栏*/
+div#shopnav_bag {
+  height: 35px;
+  background: #1f2122;
+}
+
+div#shopnav_bag .shopnav {
+  position: relative;
+  margin: 0 auto;
+  width: 1200px;
+}
+
+div#shopnav_bag .shopnav .actor_type {
+  float: left;
+  position: relative;
+  width: 100px;
+  background: #19181b;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  line-height: 35px;
+  cursor: pointer;
+  margin: 0 50px;
+}
+
+div#shopnav_bag .shopnav .actor_type:hover {
+  color: #ff2c72;
+}
+
+div#shopnav_bag .shopnav .actor_type:hover #actorListBox {
+  display: block;
+}
+
+div#shopnav_bag .shopnav .actor_type a {
+  color: #fff;
+}
+
+div#shopnav_bag .shopnav .actor_type a:hover {
+  color: #ff2c72;
+}
+
+div#shopnav_bag .shopnav .actor_type #actorListBox {
+  position: absolute;
+  top: 35px;
+  left: -50px;
+  z-index: 100;
+  display: none;
+  padding: 18px 0 21px 50px;
+  width: 1100px;
+  background: #f3f3f3;
+  box-shadow: 3px 3px 20px #cccccc;
+}
+
+div#shopnav_bag .shopnav .actor_type #actorListBox .actor_list {
+  overflow: hidden;
+}
+
+div#shopnav_bag .shopnav .actor_type #actorListBox .actor_list h4 {
+  float: left;
+  margin-right: 35px;
+  color: #1f2021;
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: bold;
+}
+
+div#shopnav_bag .shopnav .actor_type #actorListBox .actor_list h4:hover {
+  color: #ff2c72;
+  text-decoration: underline;
+}
+
+div#shopnav_bag .shopnav .actor_type #actorListBox .actor_list h4 a {
+  color: #1f2021;
+}
+
+div#shopnav_bag .shopnav .actor_type #actorListBox .actor_list h4 a:hover {
+  color: #ff2c72;
+}
+
+div#shopnav_bag .shopnav .actor_type #actorListBox .actor_list ul {
+  overflow: hidden;
+  width: 920px;
+  height: 32px;
+  float: left;
+}
+
+div#shopnav_bag .shopnav .actor_type #actorListBox .actor_list ul li {
+  float: left;
+  margin-right: 8px;
+  margin-bottom: 12px;
+  width: 176px;
+  text-align: left;
+  line-height: 20px;
+}
+
+div#shopnav_bag .shopnav .actor_type #actorListBox .actor_list ul li a {
+  color: #1f2021;
+  font-size: 14px;
+}
+
+div#shopnav_bag .shopnav .actor_type #actorListBox .actor_list ul li a:hover {
+  color: #cb3567;
+  text-decoration: underline;
+}
+
+div#shopnav_bag .shopnav .actor_type #actorListBox .actor_list .more {
+  display: inline-block;
+  background: url("http://s.yytcdn.com/v2/images/protection/more.png") 0 -31px no-repeat;
+  width: 49px;
+  height: 17px;
+}
+
+div#shopnav_bag .shopnav .actor_type #actorListBox .actor_list .more:hover {
+  background: url("http://s.yytcdn.com/v2/images/protection/more.png") 0 -47px no-repeat;
+}
+
+div#shopnav_bag .shopnav .navbox {
+  float: left;
+  overflow: hidden;
+  padding-left: 35px;
+}
+
+div#shopnav_bag .shopnav .navbox li {
+  float: left;
+  margin-right: 44px;
+  padding: 0 15px;
+  height: 32px;
+  color: #f5f5f5;
+  font-size: 14px;
+  line-height: 35px;
+}
+
+div#shopnav_bag .shopnav .navbox li a {
+  color: #f5f5f5;
+}
+
+div#shopnav_bag .shopnav .navbox li a:hover {
+  color: #ff2c72;
+}
+
+div#shopnav_bag .shopnav .navbox .active {
+  border-bottom: 3px solid #ff2c72;
+}
+
+div#shopnav_bag .shopnav .navbox .active a {
+  color: #ff2c72;
+}
+
+/*分类*/
+div.titleBox {
+  height: 48px;
+  line-height: 48px;
+  letter-spacing: 3px;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+div.titleBox .centerBox {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+div.titleBox .centerBox .allGoods {
+  font-size: 14px;
+  color: #333739;
+}
+
+div.titleBox .centerBox .emptyFilter {
+  float: right;
+  margin-right: 20px;
+  letter-spacing: 0;
+  cursor: pointer;
+  color: #1f2122;
+}
+
+div.typeBigBox {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 28px;
+  padding: 0 14px;
+  margin: 0 auto;
+  width: 1200px;
+}
+
+div.typeBigBox::after {
+  content: '';
+  display: block;
+  height: 0;
+  font-size: 0;
+  width: 0;
+  clear: both;
+  overflow: hidden;
+}
+
+div.typeBigBox::before {
+  content: "";
+  display: table;
+}
+
+div.typeBigBox .selectContain {
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+div.typeBigBox .selectContain .selectTitle {
+  float: left;
+  font-size: 16px;
+  margin-right: 22px;
+  color: #333739;
+  font-weight: bold;
+}
+
+div.typeBigBox .selectContain .selectUl {
+  width: 1080px;
+  float: left;
+  margin-bottom: 0;
+}
+
+div.typeBigBox .selectContain .selectUl li {
+  float: left;
+  font-size: 12px;
+  color: #7C7879;
+  cursor: pointer;
+  margin-bottom: 5px;
+  width: 130px;
+  height: 24px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+div.typeBigBox hr {
+  border: 1px dashed #f1f1f1;
+  margin: 0;
+}
+
+div.typeBigBox hr::after {
+  content: '';
+  display: block;
+  height: 0;
+  font-size: 0;
+  width: 0;
+  clear: both;
+  overflow: hidden;
+}
+
+div.typeBigBox hr::before {
+  content: "";
+  display: table;
+}
+
+div.typeBigBox .selectContain {
+  margin-top: 10px;
+}
+
+div.typeBigBox .selectContain::after {
+  content: '';
+  display: block;
+  height: 0;
+  font-size: 0;
+  width: 0;
+  clear: both;
+  overflow: hidden;
+}
+
+div.typeBigBox .selectContain::before {
+  content: "";
+  display: table;
+}
+
+div.typeBigBox .selectContain .selectTitle {
+  float: left;
+  font-size: 16px;
+  margin-right: 22px;
+  color: #333739;
+  font-weight: bold;
+}
+
+div.typeBigBox .selectContain .select_actorList {
+  float: left;
+  width: 1140px;
+  overflow: hidden;
+  height: 86px;
+}
+
+div.typeBigBox .selectContain .select_actorList .select_actorTitle {
+  display: inline-block;
+  width: 110px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-right: 10px;
+}
+
+div.typeBigBox .selectContain .select_actorList .select_actorTitle .wordTitle {
+  font-size: 16px;
+  color: #ff2c72;
+  margin-right: 18px;
+}
+
+div.typeBigBox .selectContain .select_actorList .select_actorTitle .firstActor {
+  color: #7C7879;
+  cursor: pointer;
+}
+
+div.typeBigBox .selectContain .select_actorList .select_actor {
+  display: inline-block;
+  height: 21px;
+  line-height: 21px;
+  font-size: 12px;
+  color: #7C7879;
+  width: 110px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+div.typeBigBox .selectContain .select_actorListHg {
+  height: 196px;
+}
+
+div.typeBigBox .selectContain .select_Loadmore {
+  cursor: pointer;
+  display: inline-block;
+  background: url("http://s.yytcdn.com/v2/images/protection/more.png") no-repeat 0 0;
+  height: 16px;
+  width: 46px;
+  float: right;
+  padding-right: 20px;
+  margin-bottom: 20px;
+}
+
+div.typeBigBox .selectContain .select_Loadmore:hover {
+  background: url("http://s.yytcdn.com/v2/images/protection/more.png") no-repeat 0 -65px;
+}
+
+div.typeBigBox .selectContain .pack_up {
+  cursor: pointer;
+  display: inline-block;
+  background: url("http://s.yytcdn.com/v2/images/protection/more.png") no-repeat 0 -16px;
+  height: 16px;
+  width: 46px;
+  float: right;
+  padding-right: 20px;
+  margin-bottom: 20px;
+}
+
+div.typeBigBox .selectContain .pack_up:hover {
+  background: url("http://s.yytcdn.com/v2/images/protection/more.png") no-repeat 0 -82px;
+}
+
+/*商品*/
+div.goods-list-box {
+  background: #f5f5f5;
+  padding: 35px 0 66px;
+}
+
+div.goods-list-box .centerBox {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+div.goods-list-box .centerBox .goods-list {
+  overflow: hidden;
+  width: 1212px;
+}
+
+div.goods-list-box .centerBox .goods-list li {
+  float: left;
+  width: 190px;
+  height: 300px;
+  margin-right: 12px;
+  margin-bottom: 10px;
+  padding: 15px 15px 0px;
+  background: #fff;
+}
+
+div.goods-list-box .centerBox .goods-list li:hover {
+  box-shadow: 3px 3px 10px #ccc;
+}
+
+div.goods-list-box .centerBox .goods-list li a {
+  display: block;
+}
+
+div.goods-list-box .centerBox .goods-list li a img {
+  width: 190px;
+  height: 190px;
+}
+
+div.goods-list-box .centerBox .goods-list li a .goods-list-name {
+  height: 45px;
+  line-height: 1.5em;
+  color: #5b5b5b;
+  font-size: 14px;
+  overflow: hidden;
+  margin: 10px 0;
+}
+
+div.goods-list-box .centerBox .goods-list li .goods-list-info {
+  text-align: center;
+}
+
+div.goods-list-box .centerBox .goods-list li .goods-list-info .goods-list-price {
+  font-size: 14px;
+  color: #ff447e;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+div.goods-list-box .centerBox .goods-list li .goods-list-info .like {
+  color: #b3b3b3;
+  display: inline-block;
+}
+
+div.goods-list-box .centerBox .goods-list li .goods-list-info .like .heart {
+  display: inline-block;
+  background: url("http://s.yytcdn.com/v2/images/ico.png") 0 -72px no-repeat;
+  width: 13px;
+  height: 10px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+div.goods-list-box .centerBox .goods-list li .goods-list-info .like .heart:hover {
+  background: url("http://s.yytcdn.com/v2/images/ico.png") -13px -72px no-repeat;
+}
+
+/*底部*/
+div#footImg {
+  margin: 60px auto 25px;
+  width: 1200px;
+  height: 57px;
+  background: url("http://s.yytcdn.com/v2/images/footer_v180123.png") no-repeat;
+}
+
+div#foot {
+  min-width: 1000px;
+  color: #999;
+  line-height: 22px;
+  text-align: center;
+  background: #181818;
+  height: 260px;
+}
+
+div#foot .contact {
+  font-size: 14px;
+  padding: 35px 0 20px;
+  color: #666;
+}
+
+div#foot .contact a {
+  color: #666;
+}
+
+div#foot .contact a:hover {
+  color: #52e2c0;
+  width: 100%;
+}
+
+div#foot .contact span {
+  width: 2px;
+  height: 10px;
+  margin: 0 8px;
+  display: inline-block;
+  overflow: hidden;
+  background: url("http://s.yytcdn.com/v2/images/base/ico/ico_index.png") -70px 0 no-repeat;
+}
+
+div#foot .copyright a {
+  color: #999;
+}
+
+div#foot .copyright a:hover {
+  color: #52e2c0;
+  width: 100%;
+}
+
+div#foot .copyright a .wenhua {
+  width: 25px;
+  height: 25px;
+  margin-right: 3px;
+}
+
+div#foot .food_license a {
+  color: #999;
+}
+
+/*侧边菜单栏*/
+div#sidebar {
+  position: fixed;
+  bottom: 10%;
+  right: 5px;
+  width: 62px;
+  height: 241px;
+}
+
+div#sidebar a {
+  display: block;
+  margin-bottom: 8px;
+  width: 60px;
+  height: 60px;
+  background: url("http://s.yytcdn.com/v2/images/menu_v3.png") no-repeat;
+}
+
+div#sidebar .shop_cart {
+  background-position: -3px -3px;
+}
+
+div#sidebar .shop_cart:hover {
+  background-position: -75px -3px;
+}
+
+div#sidebar .shop_cart:hover #cartNum {
+  color: #f52a6e;
+  background-position: 0 0;
+}
+
+div#sidebar .shop_cart #cartNum {
+  position: relative;
+  top: -5px;
+  left: 19px;
+  display: inline-block;
+  width: 22px;
+  height: 23px;
+  background: url("http://s.yytcdn.com/v2/images/cart_num.png") no-repeat -25px 0;
+  color: #fff;
+  text-align: center;
+  line-height: 23px;
+}
+
+div#sidebar .service {
+  background-position: -3px -64px;
+}
+
+div#sidebar .service:hover {
+  background-position: -75px -64px;
+}
+
+div#sidebar .notice {
+  background-position: -3px -125px;
+}
+
+div#sidebar .notice:hover {
+  background-position: -75px -125px;
+}
+
+div#sidebar #return_top {
+  display: none;
+  height: 62px;
+  background-position: -3px -186px;
+}
+
+div#sidebar #return_top:hover {
+  background-position: -75px -186px;
+}
+
+div#back {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 101;
+}
+
+div#back * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 12px;
+}
+
+div#back .banner {
+  position: absolute;
+  width: 750px;
+  height: 380px;
+  margin: auto;
+  border-radius: 3px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: url("http://img1.c.yinyuetai.com/others/admin/161222/0/3efa00caa6322aa820e87e58272ccfe3_0x0.jpg") no-repeat;
+}
+
+div#back .banner #close {
+  width: 15px;
+  height: 15px;
+  border: none;
+  cursor: pointer;
+  color: #999;
+  text-align: center;
+  line-height: 15px;
+  border-radius: 2px;
+  font-weight: bold;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+div#back .banner #close:hover {
+  background-color: red;
+  color: #fff;
+}
+
+div#back .banner #login_box {
+  width: 400px;
+  height: 380px;
+  float: right;
+}
+
+div#back .banner #login_box #loginbar {
+  font-size: 20px;
+  color: #474c56;
+  line-height: 72px;
+  height: 72px;
+  cursor: pointer;
+}
+
+div#back .banner #login_box #loginbar div {
+  height: 71px;
+  font-size: 20px;
+  border-bottom: 1px solid #e1e1e7;
+  text-align: center;
+}
+
+div#back .banner #login_box #loginbar div:hover {
+  color: #27D5BF;
+}
+
+div#back .banner #login_box #loginbar .login_active {
+  height: 70px;
+  border-bottom: 2px solid #27D5BF;
+  color: #27D5BF;
+  text-align: center;
+}
+
+div#back .banner #login_box #login_area {
+  display: block;
+  margin-top: 30px;
+}
+
+div#back .banner #login_box #login_area .input {
+  height: 40px;
+  border-radius: 2px;
+}
+
+div#back .banner #login_box #login_area #login {
+  cursor: pointer;
+  background-color: #27d5bf;
+  color: #fff;
+  font-size: 18px;
+  height: 40px;
+  line-height: 28px;
+}
+
+div#back .banner #login_box #login_area #login:hover {
+  background-color: #3ae9d3;
+}
+
+div#back .banner #login_box #login_area .checkbox {
+  color: #999;
+}
+
+div#back .banner #login_box #login_area .checkbox .forget {
+  color: #999;
+  cursor: pointer;
+}
+
+div#back .banner #login_box #login_area .checkbox .forget:hover {
+  color: #27d5bf;
+}
+
+div#back .banner #login_box #login_area #third_login {
+  margin-top: 25px;
+}
+
+div#back .banner #login_box #login_area #third_login span {
+  padding: 0;
+  color: #999;
+  height: 24px;
+  line-height: 24px;
+}
+
+div#back .banner #login_box #login_area #third_login span a {
+  display: inline-block;
+  background: url("http://s.yytcdn.com/v2/images/modules/login-register/ui.png") no-repeat;
+  width: 29px;
+  height: 24px;
+}
+
+div#back .banner #login_box #login_area #third_login span .sina {
+  background-position: 0 -159px;
+}
+
+div#back .banner #login_box #login_area #third_login span .sina:hover {
+  background-position: 0 -125px;
+}
+
+div#back .banner #login_box #login_area #third_login span .weixin {
+  background-position: 0 -226px;
+}
+
+div#back .banner #login_box #login_area #third_login span .weixin:hover {
+  background-position: 0 -193px;
+}
+
+div#back .banner #login_box #login_area #third_login span .qq {
+  background-position: 0 -52px;
+}
+
+div#back .banner #login_box #login_area #third_login span .qq:hover {
+  background-position: 0 -19px;
+}
+
+div#back .banner #login_box #regsiter_area {
+  display: none;
+  margin-top: 30px;
+}
+
+div#back .banner #login_box #regsiter_area .input {
+  height: 40px;
+  border-radius: 2px;
+}
+
+div#back .banner #login_box #regsiter_area #regsiter {
+  cursor: pointer;
+  background-color: #27d5bf;
+  color: #fff;
+  font-size: 18px;
+  height: 40px;
+  line-height: 28px;
+}
+
+div#back .banner #login_box #regsiter_area #regsiter:hover {
+  background-color: #3ae9d3;
+}
+
+div#back .banner #login_box #regsiter_area .auth_code {
+  width: 122px;
+  height: 40px;
+  line-height: 40px;
+  cursor: pointer;
+  color: #767676;
+  background-color: #eee;
+  margin-left: 10px;
+  text-align: center;
+}
+
+div#back .banner #login_box #regsiter_area .auth_code:hover {
+  background-color: #d5d5d5;
+}
